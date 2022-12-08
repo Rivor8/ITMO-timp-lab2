@@ -39,6 +39,7 @@ int main() {
 
         if (lic_count <= 0 || lic_time <= 0 || lic_time > LIC_TIME || lic_count > LIC_COUNT) {
             std::cout << "Limits are out. Buy a license or uninstall the program." << std::endl; // Лимиты вышли
+            system("pause");
             return 0; 
         }
     }
@@ -92,6 +93,6 @@ int main() {
         lout.close();
     }
 
-
+    system("pause");
     return 0;
 }
